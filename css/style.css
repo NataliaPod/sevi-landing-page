@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
+
+body {
+  font: 400 22px/1.9 "Nunito Sans", sans-serif;
+  color: #968fab;
+  background: url(../img/main_logo.png) no-repeat right top;
+  background-size: 94vh;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1640px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin: 0 0 70px;
+  color: #44224b;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 76px;
+  font-weight: 800;
+  letter-spacing: 0.02;
+  line-height: 1.2;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 0.01;
+  line-height: 0.64;
+  padding-bottom: 30px;
+}
+
+.ba-text-center__color {
+  color: #fdc800;
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #968fab;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #44224b;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+  border: 2px solid #f4eef5;
+  border-radius: 42px;
+  color: #f4eef5;
+  background-color: #f4eef5;
+  padding: 22px 50px;
+  height: 83px;
+  width: 680px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid transparent;
+  background-color: #fff;
+  border-radius: 42px;
+  caret-color: #44224b;
+  color: #44224b;
+  font-weight: 800;
+  border-color: #723182;
+  outline: none;
+}
+textarea {
+}
+
+.ba-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.ba-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ba-logo img {
+  display: block;
+}
+
+.ba-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.ba-nav__item {
+  padding-right: 60px;
+  line-height: 1;
+}
+
+.ba-nav__link {
+  font: 600 22px/1 "Nunito Sans", sans-serif;
+  display: block;
+}
+
+.ba-nav__link:hover {
+  color: #44224b;
+}
+
+.ba-nav__link--button {
+  border-radius: 27px;
+  background-color: #723182;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 12px 56px;
+  opacity: 1;
+  border: 1px solid #723182;
+}
+
+.ba-nav__link--button:hover {
+  background-color: transparent;
+  color: #723182;
+}
+
+.ba-section-intro{
+  background: url(../img/img_left.png) no-repeat left bottom;
+}
+
+.ba-section-intro__inner {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ba-search-form{
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.ba-search__button {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 21px;
+  right: 28px;
+  border: none;
+  background: transparent;
+}
+
+/* our resources section */
+.ba-section {
+  padding: 160px 0 75px;
+}
+
+.ba-res-card{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  max-width: 349px;
+}
+
+.ba-res-card__title{
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+  .ba-res-desc{
+    margin-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 640px){
+  .ba-col{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .ba-col{
+    width: 25%;
+  }
+}
+
