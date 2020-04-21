@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
     <main>
       <header class="ba-header">
         <div class="ba-container">
@@ -87,6 +88,10 @@
               </ul>
             </nav>
             <!-- /.ba-nav -->
+
+            <button class="ba-menu-toogle" aria-label="Open menu" title="Open menu">
+              <span></span>
+            </button>
           </div>
           <!-- /.ba-header__inner -->
         </div>
@@ -227,23 +232,28 @@
         <!-- /.ba-row -->
       </section>
       <!-- /.ba-section -->
-      <section class="ba-section">
+      <section class="ba-section ba-section__img">
         <div class="ba-container">
-          <div class="ba-row">
-          <div class="ba-col-6">
-            <img src="img/libraries_img.png" alt="libraries">
-          </div>
-          <div class="ba-col-6">
+          <div class="ba-row">    
+          <div class="ba-libraries-col"></div>      
+          <div class="ba-libraries-col">
             <h2 class="ba-libraries_title"><span class="ba-text-center__color">Our</span> libraries</h2>
-            <p>Your reading list is a good place to start, but you will be 
+            <p class="ba-libraries_desc">Your reading list is a good place to start, but you will be 
               expected to read more widely too. Use Sevi to search for information on your topic, and to find books, journal 
               articles and other materials in the Library.</p>
-              <a href="#" class="ba-nav__link--button">Learn more</a>
+              <a href="#" class="ba-libraries__button ba-nav__link--button">Learn more</a>
           </div>
         </div>
         </div>
       </section>
       <!-- /.ba-section -->
     </main>
+
+    <script>
+      let menuBtn = document.querySelector('.ba-menu-toggle');
+      let menu = document.querySelector('.ba-nav');
+    
+      menuBtn.addEventListener('click', () => menu.classList.toggle('open'));
+    </script>
   </body>
 </html>
