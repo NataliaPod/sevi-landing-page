@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -537,9 +538,9 @@ body {
   font: 400 16px/1.9 "Nunito Sans", sans-serif;
   color: #968fab;
   background: url(../img/main_logo.png) no-repeat right top;
-  background-size: 45vw;
+  background-size: 52vw;
 }
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 640px) {
   body {
     background-size: 45vw;
     font-size: 22px;
@@ -550,7 +551,7 @@ body {
 .ba-container {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1640px;
+  max-width: 1612px;
 }
 .ba-container--small {
   max-width: 1210px;
@@ -568,50 +569,51 @@ h6 {
   color: #44224b;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.02em;
 }
 
 p {
-  margin: 0 0 20px;
+  margin: 0 0 50px;
+  font-size: 28px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 800;
-  letter-spacing: 0.02;
+  margin-bottom: 80px;
   line-height: 1.2;
-  margin-bottom: 70px;
 }
 @media screen and (min-width: 640px) {
   h1 {
-    font-size: 42px;
+    font-size: 66px;
   }
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 42px;
+    font-size: 76px;
   }
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
 }
 @media screen and (min-width: 1024px) {
   h2 {
-    font-size: 32px;
+    font-size: 52px;
   }
 }
 
 h3 {
-  font-size: 18px;
-  letter-spacing: 0.01;
+  font-size: 22px;
+  letter-spacing: 0.01em;
   line-height: 0.64;
   padding-bottom: 30px;
 }
 @media screen and (min-width: 1024px) {
   h3 {
-    font-size: 22px;
+    font-size: 32px;
   }
 }
 
@@ -827,22 +829,19 @@ select:focus {
 }
 .ba-section-intro__inner {
   min-height: 100vh;
+  padding: 287px 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (min-width: 1024px) {
   .ba-section-intro__inner {
-    width: 46.5%;
-  }
-}
-@media (min-width: 640px) {
-  .ba-section-intro__inner {
-    min-height: 70vh;
+    width: 53.5%;
   }
 }
 
 .ba-search-form {
+  max-width: 684px;
   display: flex;
   position: relative;
 }
@@ -884,16 +883,16 @@ select:focus {
 
 /* our resources section */
 .ba-section {
-  padding: 160px 0 75px;
+  padding: 50px 0 75px;
 }
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   .ba-section {
-    padding: 70px 0 25px;
+    padding: 237px 0 100px;
   }
 }
 
 .ba-res-desc {
-  padding-bottom: 110px;
+  padding-bottom: 140px;
 }
 
 .ba-res-card {
@@ -902,6 +901,10 @@ select:focus {
   text-decoration: none;
   max-width: 349px;
   margin: 0 auto 40px;
+}
+.ba-res-card > ul {
+  margin: 0;
+  padding: 0;
 }
 @media screen and (min-width: 1024px) {
   .ba-res-card {
@@ -934,6 +937,11 @@ select:focus {
 .ba-section__img {
   background: url(../img/libraries_img.png) no-repeat left top;
 }
+@media screen and (max-width: 640px) {
+  .ba-section__img {
+    background-size: contain;
+  }
+}
 
 .ba-libraries-row {
   display: flex;
@@ -941,14 +949,15 @@ select:focus {
 }
 
 .ba-libraries-col {
-  padding-left: 85px;
-  max-width: 50%;
+  width: 50%;
+  padding-left: 220px;
+  margin-top: -85px;
 }
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .ba-libraries-col {
-    padding-left: 0;
     max-width: 100%;
-    margin-top: 140px;
+    padding-left: 0;
+    padding-top: 520px;
   }
 }
 
@@ -963,18 +972,13 @@ select:focus {
   }
 }
 .ba-libraries_title {
-  margin-bottom: 70px;
+  margin-bottom: 47px;
 }
 
 .ba-libraries_desc {
   margin-bottom: 70px;
 }
 
-@media (min-width: 640px) {
-  .ba-section {
-    padding: 50px;
-  }
-}
 .ba-books-wrap {
   padding-top: 50px;
   text-align: center;
@@ -993,7 +997,7 @@ select:focus {
 }
 .ba-book__title {
   font: 800 26px/1.5 "Nunito Sans", sans-serif;
-  letter-spacing: 0.01;
+  letter-spacing: 0.01em;
   color: #091e40;
   padding-top: 15px;
 }
@@ -1010,7 +1014,7 @@ select:focus {
 }
 .ba-book_price {
   font: 900 30px/1.5 "Nunito Sans", sans-serif;
-  letter-spacing: 0.01;
+  letter-spacing: 0.01em;
   color: #091e40;
 }
 .ba-book:hover {
@@ -1028,9 +1032,199 @@ select:focus {
 }
 .ba-mobile_title {
   margin-bottom: 78px;
+  max-width: 65%;
 }
 .ba-mobile-col {
   max-width: 50%;
+}
+
+.ba-footer {
+  padding: 0;
+  margin-bottom: 32px;
+}
+.ba-footer-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.ba-footer-links-col {
+  width: 20%;
+}
+@media screen and (min-width: 1024px) {
+  .ba-footer-links-col {
+    width: 20%;
+  }
+  .ba-footer-links-col:nth-child(2) {
+    width: 20%;
+  }
+  .ba-footer-links-col:nth-child(3) {
+    width: 20%;
+  }
+  .ba-footer-links-col:nth-child(4) {
+    width: 20%;
+  }
+  .ba-footer-links-col:nth-child(5) {
+    width: 20%;
+  }
+}
+.ba-footer-list {
+  margin: 0 0 64px;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+.ba-footer-list li + li {
+  margin-top: 7px;
+}
+@media screen and (min-width: 640px) {
+  .ba-footer-list li + li {
+    margin-top: 18px;
+  }
+}
+
+.ba-books__inner {
+  text-align: center;
+}
+.ba-books__title {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .ba-books__title {
+    margin-bottom: 107px;
+  }
+}
+.ba-books__list {
+  counter-reset: section;
+  padding: 0;
+  list-style-type: none;
+}
+.ba-books__item {
+  text-align: left;
+  font-size: 22px;
+  padding: 20px 0;
+}
+.ba-books__subtitle {
+  display: flex;
+  align-items: baseline;
+}
+.ba-books__subtitle h3 {
+  font: 800 30px/1.6 "Nunito Sans", sans-serif;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #091e40;
+}
+.ba-books__subtitle .ba-books__price {
+  font-size: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .ba-books__subtitle {
+    padding-right: 15px;
+  }
+  .ba-books__subtitle h3 {
+    font-size: 34px;
+  }
+  .ba-books__subtitle .ba-books__price {
+    font-size: 40px;
+  }
+}
+.ba-books__starwrapper {
+  display: flex;
+  flex-grow: 1;
+  padding: 0px 77px;
+}
+.ba-books__starwrapper svg {
+  margin-left: 15px;
+}
+.ba-books__price {
+  font-weight: 800;
+  font-size: 40px;
+}
+.ba-books__subcontent {
+  font-size: 30px;
+  padding: 0 37px;
+}
+.ba-books__description h3 {
+  color: #091e40;
+  position: relative;
+}
+.ba-books__description h3::after {
+  content: " • Copies Sold: 150 million";
+}
+.ba-books__item.open {
+  box-shadow: 0px 40px 70px 0px rgba(197, 197, 197, 0.3);
+  padding: 76px 15px 0px;
+  margin-bottom: 53px;
+}
+@media screen and (min-width: 640px) {
+  .ba-books__item.open .ba-books__subtitle {
+    font-size: 30px;
+  }
+  .ba-books__item.open .ba-books__subtitle h3 {
+    font-size: 35px;
+    letter-spacing: -0.035em;
+  }
+  .ba-books__item.open .ba-books__starwrapper {
+    padding: 0 55px;
+    margin-top: 5px;
+  }
+  .ba-books__item.open .ba-books__starwrapper svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-books__item.open .ba-books__subtitle {
+    font-size: 50px;
+  }
+  .ba-books__item.open .ba-books__subtitle h3 {
+    font-size: 45px;
+    letter-spacing: -0.035em;
+  }
+  .ba-books__item.open .ba-books__starwrapper {
+    padding: 0 55px;
+    margin-top: 5px;
+  }
+  .ba-books__item.open .ba-books__starwrapper svg {
+    width: 50px;
+    height: 50px;
+  }
+  .ba-books__item.open .ba-books__content {
+    padding: 50px 20px;
+    display: flex;
+  }
+  .ba-books__item.open .ba-books__img {
+    width: 230px;
+    margin-left: 22px;
+  }
+  .ba-books__item.open .ba-books__description {
+    margin-left: 50px;
+    padding: 27px 0;
+    max-width: 790px;
+  }
+  .ba-books__item.open .ba-books__description h3 {
+    text-align: left;
+    font-size: 30px;
+    padding: 0 5px;
+    margin-bottom: 30px;
+  }
+  .ba-books__item.open .ba-books__description p {
+    font-size: 28px;
+    letter-spacing: -0.046em;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  .ba-books__item.open .ba-books__description img {
+    margin-top: 35px;
+  }
+}
+
+.ba-footer-copy {
+  margin-right: 15px;
+}
+.ba-footer-copy-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .ba-footer-socials {
@@ -1039,7 +1233,7 @@ select:focus {
   justify-content: center;
 }
 .ba-footer-socials a + a {
-  margin-left: 32px;
+  margin-left: 10px;
 }
 .ba-footer-socials a {
   display: flex;
